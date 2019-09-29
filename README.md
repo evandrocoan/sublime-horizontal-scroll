@@ -5,25 +5,38 @@ for [Sublime Text 2][0] or [3][3]
 
 -------------
 
-Ever wanted to scroll horizontally in Sublime Text with your keyboard?  
+Ever wanted to scroll horizontally in Sublime Text with your keyboard?
 Well. Now you can.
+
 
 ## Installation
 
-**Step 1** -- Go get wbond's beautifully simple [Sublime Package-Control][2].  
-**Step 2** -- Hit `ctrl+shift+p` (Windows, Linux) or `cmd+shift+p` (OSX), run the `install package` command.  
-**Step 3** -- Search for and install _Horizontal Scroll_.
+### By Package Control
 
-**Step 4** -- Win and/or Profit.
+1. Download & Install `Sublime Text 3` (https://www.sublimetext.com/3)
+1. Go to the menu `Tools -> Install Package Control`, then,
+   wait few seconds until the `Package Control` installation finishes
+1. Go to the menu `Preferences -> Package Control`
+1. Type `Package Control Add Channel` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, input the following address and press <kbd>Enter</kbd>
+   ```
+   https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json
+   ```
+1. Now, go again to the menu `Preferences -> Package Control`
+1. This time type `Package Control Install Package` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, search for `HorizontalScroll` and press <kbd>Enter</kbd>
 
------
+See also:
+1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
+1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
+
 
 ## Usage
 
 #### The Short
 
-Is there text running off the edge of your editor?  
-Is this plug-in installed?  
+Is there text running off the edge of your editor?
+Is this plug-in installed?
 Press `alt+down`. Or `ctrl+alt+shift+down` if you're on a Mac.
 
 There weren't any good hotkeys left! I'm sorry!
@@ -39,9 +52,9 @@ The command that this plug-in adds is (at most):
 
     "command": "scroll_width", "args": {"amount": [+/-]30, "by_character": True}
 
-If `by_character` is left `True` motion is based on the width of an em-dash, which allows this command to scale motion with your current font size. If `by_character` is `False`, `scroll_width` will move the screen by `amount` of raw pixels. I'd recommend pumping `amount` up to at least 150 if you're not scrolling `by_character`.  
-`by_character` defaults to `True`, by the way, so if you ever set this command up -- when, say, rebinding the Mac keys -- you can skip that argument.  
-`amount` is simply a relative indicator of how far every call to `scroll_width` will move the screen, with negative scrolling the screen left.  
+If `by_character` is left `True` motion is based on the width of an em-dash, which allows this command to scale motion with your current font size. If `by_character` is `False`, `scroll_width` will move the screen by `amount` of raw pixels. I'd recommend pumping `amount` up to at least 150 if you're not scrolling `by_character`.
+`by_character` defaults to `True`, by the way, so if you ever set this command up -- when, say, rebinding the Mac keys -- you can skip that argument.
+`amount` is simply a relative indicator of how far every call to `scroll_width` will move the screen, with negative scrolling the screen left.
 
 -----
 
