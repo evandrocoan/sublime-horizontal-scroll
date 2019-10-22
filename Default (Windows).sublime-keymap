@@ -3,5 +3,5 @@
     // { "keys": ["alt+up"], "command": "scroll_width", "args": {"amount": -30 } }
 
     { "keys": ["f9"], "command": "scroll_width", "args": {"amount": 30 } },
-    { "keys": ["alt+f9"], "command": "scroll_width", "args": {"amount": -30 } },
+    { "keys": ["ctrl+f9"], "command": "scroll_width", "args": {"amount": -30 } },
 ]
